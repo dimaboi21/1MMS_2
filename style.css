@@ -46,8 +46,8 @@ body {
   background-image: url(./img/Vector.svg);
   background-size: contain;
   background-repeat: no-repeat;
-  width: 826px;
-  height: 1420px;
+  max-width: 826px;
+  max-height: 100vh;
 }
 
 .timer {
@@ -124,17 +124,11 @@ body {
 }
 @media screen and (max-width: 768px) {
   .timer__blur {
-    min-width: 633px;
-    width: 100%;
-    max-height: 100%;
-  }
-}
-@media screen and (max-width: 480px) {
-  .timer__blur {
     position: relative;
     min-width: 433px;
     width: 100%;
     max-height: 100%;
+    background-position: center;
   }
   .timer__seconds {
     font-size: 80px;
@@ -142,13 +136,16 @@ body {
   .timer__time {
     display: flex;
     flex-direction: column;
-    top: 35%;
+    background-position: center;
   }
   .timer__text {
     font-size: 30px;
   }
   .timer__img {
     width: 400px;
+    position: relative;
+    right: 100px;
+    top: 160px;
   }
   .timer__image {
     position: absolute;
@@ -170,7 +167,7 @@ body {
   .timer__time {
     display: flex;
     flex-direction: column;
-    top: 25%;
+    bottom: 65px;
   }
   .timer__text {
     font-size: 27px;
@@ -186,6 +183,9 @@ body {
   }
   .timer__img {
     width: 300px;
+    top: 80px;
+    left: 0;
+    
   }
 }
 
