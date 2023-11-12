@@ -12,7 +12,8 @@ menuBtn.addEventListener("click" , () =>{
 function startTimer() {
   let minutes = 1;
   let seconds = 10;
-  const timerElement = document.getElementById("timer");
+  const timerElement = document.querySelector(".timer__seconds");
+  console.log(timerElement)
   let timerInterval = setInterval(function () {
     
     timerElement.textContent = formatTime(minutes) + ":" + formatTime(seconds);
@@ -29,4 +30,4 @@ function startTimer() {
     return time < 10 ? "0" + time : time;
   }
 }
-window.onload = startTimer;
+window.onload = startTimer();
