@@ -185,7 +185,6 @@ body {
     width: 300px;
     top: 80px;
     left: 0;
-    
   }
 }
 
@@ -271,6 +270,8 @@ body {
     background-color: transparent;
     border: none;
     height: 30px;
+    position: absolute;
+    right: 10px;
   }
   .menu__item {
     font-size: 0;
@@ -317,6 +318,7 @@ body {
   font-size: 140px;
   line-height: 171px;
   color: #fff;
+  text-shadow: -10px 10px 0 #1e1e1e;
 }
 .about__title-shadow {
   position: absolute;
@@ -364,6 +366,8 @@ body {
   position: static;
   display: flex;
   flex-direction: column;
+  max-height: 225px;
+  max-width: 175px;
 }
 .about__wrapper {
   display: flex;
@@ -479,34 +483,49 @@ body {
   }
   .about__button {
     margin-top: 384px;
+    max-width: 165px;
+    max-height: 165px;
   }
 }
 @media screen and (max-width: 320px) {
-  .big__img{
+  .big__img {
     max-width: 280px;
   }
-  .about__titles{
+  .about__titles {
     position: absolute;
     left: 70px;
+    top: 40px;
   }
-  .about__subtitle{
+  .about__subtitle {
     position: absolute;
     top: 120px;
     text-align: center;
   }
-  .small-img{
+  .about__programs {
     display: none;
   }
-  .small-image{
-    height: 35px;
+  .about__button {
+    margin-top: 500px;
+    max-width: 100px;
+    max-height: 100px;
+    left: 95px;
   }
-  .remains__text{
+  .small-img {
+    display: none;
+  }
+  .small-image {
+    height: 35px;
+    position: absolute;
+    top: 300px;
+    left: 190px;
+  }
+  .remains__text {
     display: flex;
     position: relative;
     justify-content: center;
     bottom: 10px;
   }
-  .about__title-shadow{
+  .about__title-shadow {
     font-size: 50px;
     bottom: -10px;
     left: 70px;
